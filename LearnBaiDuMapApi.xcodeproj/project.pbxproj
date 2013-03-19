@@ -12,12 +12,16 @@
 		2605A15516F83E50007BD2CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2605A15416F83E50007BD2CB /* CoreGraphics.framework */; };
 		2605A15B16F83E50007BD2CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2605A15916F83E50007BD2CB /* InfoPlist.strings */; };
 		2605A15D16F83E50007BD2CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2605A15C16F83E50007BD2CB /* main.m */; };
-		2605A16116F83E50007BD2CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2605A16016F83E50007BD2CB /* AppDelegate.m */; };
+		2605A16116F83E50007BD2CB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2605A16016F83E50007BD2CB /* AppDelegate.mm */; };
 		2605A16316F83E50007BD2CB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2605A16216F83E50007BD2CB /* Default.png */; };
 		2605A16516F83E50007BD2CB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2605A16416F83E50007BD2CB /* Default@2x.png */; };
 		2605A16716F83E50007BD2CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2605A16616F83E50007BD2CB /* Default-568h@2x.png */; };
 		2605A16A16F83E50007BD2CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2605A16916F83E50007BD2CB /* ViewController.m */; };
 		2605A16D16F83E50007BD2CB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2605A16B16F83E50007BD2CB /* ViewController.xib */; };
+		2665E89616F84382001A92DB /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2665E89516F84382001A92DB /* mapapi.bundle */; };
+		2665E8BF16F8459E001A92DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2665E8BE16F8459E001A92DB /* CoreLocation.framework */; };
+		2665E8C116F845A9001A92DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2665E8C016F845A9001A92DB /* QuartzCore.framework */; };
+		2669ACB016F850090083D4D9 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2665E8B916F843CD001A92DB /* libbaidumapapi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,13 +34,46 @@
 		2605A15C16F83E50007BD2CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2605A15E16F83E50007BD2CB /* LearnBaiDuMapApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnBaiDuMapApi-Prefix.pch"; sourceTree = "<group>"; };
 		2605A15F16F83E50007BD2CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2605A16016F83E50007BD2CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2605A16016F83E50007BD2CB /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		2605A16216F83E50007BD2CB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2605A16416F83E50007BD2CB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2605A16616F83E50007BD2CB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2605A16816F83E50007BD2CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2605A16916F83E50007BD2CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2605A16C16F83E50007BD2CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2665E89516F84382001A92DB /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = ../mapapi.bundle; sourceTree = "<group>"; };
+		2665E89816F84386001A92DB /* BMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMapKit.h; sourceTree = "<group>"; };
+		2665E89916F84386001A92DB /* BMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotation.h; sourceTree = "<group>"; };
+		2665E89A16F84387001A92DB /* BMKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKAnnotationView.h; sourceTree = "<group>"; };
+		2665E89B16F84387001A92DB /* BMKCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircle.h; sourceTree = "<group>"; };
+		2665E89C16F84387001A92DB /* BMKCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKCircleView.h; sourceTree = "<group>"; };
+		2665E89D16F84387001A92DB /* BMKGeneralDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeneralDelegate.h; sourceTree = "<group>"; };
+		2665E89E16F84387001A92DB /* BMKGeocodeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeocodeType.h; sourceTree = "<group>"; };
+		2665E89F16F84387001A92DB /* BMKGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKGeometry.h; sourceTree = "<group>"; };
+		2665E8A016F84387001A92DB /* BMKMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapManager.h; sourceTree = "<group>"; };
+		2665E8A116F84387001A92DB /* BMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMapView.h; sourceTree = "<group>"; };
+		2665E8A216F84387001A92DB /* BMKMultiPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKMultiPoint.h; sourceTree = "<group>"; };
+		2665E8A316F84387001A92DB /* BMKOfflineMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMap.h; sourceTree = "<group>"; };
+		2665E8A416F84387001A92DB /* BMKOfflineMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOfflineMapType.h; sourceTree = "<group>"; };
+		2665E8A516F84387001A92DB /* BMKOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlay.h; sourceTree = "<group>"; };
+		2665E8A616F84387001A92DB /* BMKOverlayPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayPathView.h; sourceTree = "<group>"; };
+		2665E8A716F84387001A92DB /* BMKOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKOverlayView.h; sourceTree = "<group>"; };
+		2665E8A816F84387001A92DB /* BMKPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPinAnnotationView.h; sourceTree = "<group>"; };
+		2665E8A916F84387001A92DB /* BMKPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPointAnnotation.h; sourceTree = "<group>"; };
+		2665E8AA16F84387001A92DB /* BMKPoiSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPoiSearchType.h; sourceTree = "<group>"; };
+		2665E8AB16F84387001A92DB /* BMKPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygon.h; sourceTree = "<group>"; };
+		2665E8AC16F84387001A92DB /* BMKPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolygonView.h; sourceTree = "<group>"; };
+		2665E8AD16F84387001A92DB /* BMKPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolyline.h; sourceTree = "<group>"; };
+		2665E8AE16F84387001A92DB /* BMKPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKPolylineView.h; sourceTree = "<group>"; };
+		2665E8AF16F84387001A92DB /* BMKRouteSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKRouteSearchType.h; sourceTree = "<group>"; };
+		2665E8B016F84387001A92DB /* BMKSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKSearch.h; sourceTree = "<group>"; };
+		2665E8B116F84387001A92DB /* BMKShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKShape.h; sourceTree = "<group>"; };
+		2665E8B216F84387001A92DB /* BMKTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKTypes.h; sourceTree = "<group>"; };
+		2665E8B316F84387001A92DB /* BMKUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKUserLocation.h; sourceTree = "<group>"; };
+		2665E8B416F84387001A92DB /* BMKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKVersion.h; sourceTree = "<group>"; };
+		2665E8B916F843CD001A92DB /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaidumapapi.a; sourceTree = "<group>"; };
+		2665E8BE16F8459E001A92DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2665E8C016F845A9001A92DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +81,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2665E8C116F845A9001A92DB /* QuartzCore.framework in Frameworks */,
+				2665E8BF16F8459E001A92DB /* CoreLocation.framework in Frameworks */,
 				2605A15116F83E50007BD2CB /* UIKit.framework in Frameworks */,
 				2605A15316F83E50007BD2CB /* Foundation.framework in Frameworks */,
 				2605A15516F83E50007BD2CB /* CoreGraphics.framework in Frameworks */,
+				2669ACB016F850090083D4D9 /* libbaidumapapi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +96,8 @@
 		2605A14116F83E50007BD2CB = {
 			isa = PBXGroup;
 			children = (
+				2665E8C016F845A9001A92DB /* QuartzCore.framework */,
+				2665E8BE16F8459E001A92DB /* CoreLocation.framework */,
 				2605A15616F83E50007BD2CB /* LearnBaiDuMapApi */,
 				2605A14F16F83E50007BD2CB /* Frameworks */,
 				2605A14D16F83E50007BD2CB /* Products */,
@@ -73,6 +115,7 @@
 		2605A14F16F83E50007BD2CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2665E8B716F843CD001A92DB /* libs */,
 				2605A15016F83E50007BD2CB /* UIKit.framework */,
 				2605A15216F83E50007BD2CB /* Foundation.framework */,
 				2605A15416F83E50007BD2CB /* CoreGraphics.framework */,
@@ -83,8 +126,10 @@
 		2605A15616F83E50007BD2CB /* LearnBaiDuMapApi */ = {
 			isa = PBXGroup;
 			children = (
+				2665E89516F84382001A92DB /* mapapi.bundle */,
+				2665E89716F84386001A92DB /* inc */,
 				2605A15F16F83E50007BD2CB /* AppDelegate.h */,
-				2605A16016F83E50007BD2CB /* AppDelegate.m */,
+				2605A16016F83E50007BD2CB /* AppDelegate.mm */,
 				2605A16816F83E50007BD2CB /* ViewController.h */,
 				2605A16916F83E50007BD2CB /* ViewController.m */,
 				2605A16B16F83E50007BD2CB /* ViewController.xib */,
@@ -105,6 +150,66 @@
 				2605A16616F83E50007BD2CB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2665E89716F84386001A92DB /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				2665E89816F84386001A92DB /* BMapKit.h */,
+				2665E89916F84386001A92DB /* BMKAnnotation.h */,
+				2665E89A16F84387001A92DB /* BMKAnnotationView.h */,
+				2665E89B16F84387001A92DB /* BMKCircle.h */,
+				2665E89C16F84387001A92DB /* BMKCircleView.h */,
+				2665E89D16F84387001A92DB /* BMKGeneralDelegate.h */,
+				2665E89E16F84387001A92DB /* BMKGeocodeType.h */,
+				2665E89F16F84387001A92DB /* BMKGeometry.h */,
+				2665E8A016F84387001A92DB /* BMKMapManager.h */,
+				2665E8A116F84387001A92DB /* BMKMapView.h */,
+				2665E8A216F84387001A92DB /* BMKMultiPoint.h */,
+				2665E8A316F84387001A92DB /* BMKOfflineMap.h */,
+				2665E8A416F84387001A92DB /* BMKOfflineMapType.h */,
+				2665E8A516F84387001A92DB /* BMKOverlay.h */,
+				2665E8A616F84387001A92DB /* BMKOverlayPathView.h */,
+				2665E8A716F84387001A92DB /* BMKOverlayView.h */,
+				2665E8A816F84387001A92DB /* BMKPinAnnotationView.h */,
+				2665E8A916F84387001A92DB /* BMKPointAnnotation.h */,
+				2665E8AA16F84387001A92DB /* BMKPoiSearchType.h */,
+				2665E8AB16F84387001A92DB /* BMKPolygon.h */,
+				2665E8AC16F84387001A92DB /* BMKPolygonView.h */,
+				2665E8AD16F84387001A92DB /* BMKPolyline.h */,
+				2665E8AE16F84387001A92DB /* BMKPolylineView.h */,
+				2665E8AF16F84387001A92DB /* BMKRouteSearchType.h */,
+				2665E8B016F84387001A92DB /* BMKSearch.h */,
+				2665E8B116F84387001A92DB /* BMKShape.h */,
+				2665E8B216F84387001A92DB /* BMKTypes.h */,
+				2665E8B316F84387001A92DB /* BMKUserLocation.h */,
+				2665E8B416F84387001A92DB /* BMKVersion.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		2665E8B716F843CD001A92DB /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				2665E8B816F843CD001A92DB /* Release-iphoneos */,
+				2665E8BA16F843CD001A92DB /* Release-iphonesimulator */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		2665E8B816F843CD001A92DB /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				2665E8B916F843CD001A92DB /* libbaidumapapi.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		2665E8BA16F843CD001A92DB /* Release-iphonesimulator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Release-iphonesimulator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +268,7 @@
 				2605A16516F83E50007BD2CB /* Default@2x.png in Resources */,
 				2605A16716F83E50007BD2CB /* Default-568h@2x.png in Resources */,
 				2605A16D16F83E50007BD2CB /* ViewController.xib in Resources */,
+				2665E89616F84382001A92DB /* mapapi.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2605A15D16F83E50007BD2CB /* main.m in Sources */,
-				2605A16116F83E50007BD2CB /* AppDelegate.m in Sources */,
+				2605A16116F83E50007BD2CB /* AppDelegate.mm in Sources */,
 				2605A16A16F83E50007BD2CB /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +329,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -243,7 +349,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -253,9 +359,17 @@
 		2605A17116F83E50007BD2CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LearnBaiDuMapApi/LearnBaiDuMapApi-Prefix.pch";
 				INFOPLIST_FILE = "LearnBaiDuMapApi/LearnBaiDuMapApi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/libs/Release-iphoneos\"",
+					"\"$(SRCROOT)/libs/Release-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -264,9 +378,17 @@
 		2605A17216F83E50007BD2CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LearnBaiDuMapApi/LearnBaiDuMapApi-Prefix.pch";
 				INFOPLIST_FILE = "LearnBaiDuMapApi/LearnBaiDuMapApi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/libs/Release-iphoneos\"",
+					"\"$(SRCROOT)/libs/Release-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +413,7 @@
 				2605A17216F83E50007BD2CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
