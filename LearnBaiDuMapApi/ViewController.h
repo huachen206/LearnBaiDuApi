@@ -6,6 +6,8 @@
 //  Copyright (c) 2013年 中卡. All rights reserved.
 //
 
+// just shi yi shi
+
 #import <UIKit/UIKit.h>
 #import "BMapKit.h"
 
